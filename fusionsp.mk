@@ -22,9 +22,9 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/fusion/config/common_phone.mk)
 
-PRODUCT_NAME := cm_bacon
+PRODUCT_NAME := bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
