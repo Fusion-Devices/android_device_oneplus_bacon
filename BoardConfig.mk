@@ -21,6 +21,26 @@
 TARGET_KERNEL_CONFIG := bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
+TW_THEME := portrait_hdpi
+
+# Fusion Optimizations
+FUSION_OPT := true
+FUSION_O3 := true
+FUSION_STRICT := false
+FUSION_OFAST := true
+FUSION_KRAIT := true
+FUSION_GRAPHITE := true
+FUSION_PIPE := true
+FUSION_ENABLE_GCCONLY := true
+FLOOP_NEST_OPTIMIZE := true
+FUSION_FFAST_MATH := true
+TARGET_FUSION_ROM := 4.9
+TARGET_FUSION_KERNEL := 4.9
+# SaberMod
+-include vendor/fusion/config/sm.mk
+
+
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
 
